@@ -1,87 +1,163 @@
-<style>
-H1 {
-  text-shadow: 1px 1px white,
-               2px 2px #777;
-  color: purple;
-  transition: all 1s;
-  text-align: center;
-  }
-  H1:hover {
-    text-shadow: 1px 1px white,
-                 2px 2px tomato;
-    color: pink;
-    }
-.back {
-position: fixed;
-padding: 0;
-margin: 0;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background: white;
-animation-name: backdiv;
-animation-duration: 1s; 
-animation-iteration-count: infinite;
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
-}
 
-.heart {
-position: absolute;
-margin: auto;
-top: 0;
-right: 0;
-bottom: 0;
-left: 0;
-background-color: pink;
-height: 50px;
-width: 50px;
-transform: rotate(-45deg);
-animation-name: beat;
-animation-duration: 1s;
-animation-iteration-count: infinite;
+    <title>Железобетонные кольца</title>
+    
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/album/">
 
-}
-.heart:after {
-background-color: pink;
-content: "";
-border-radius: 50%;
-position: absolute;
-width: 50px;
-height: 50px;
-top: 0px;
-left: 25px;
-}
-.heart:before {
-background-color: pink;
-content: "";
-border-radius: 50%;
-position: absolute;
-width: 50px;
-height: 50px;
-top: -25px;
-left: 0px;
-}
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
 
-@keyframes backdiv {
-50% {
-background: #ffe6f2;
-}
-}
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+  </head>
 
-@keyframes beat {
-0% {
-transform: scale(1) rotate(-45deg);
-}
-50% {
-transform: scale(0.6) rotate(-45deg);
-}
-}
+  <body>
 
-</style>
-<div class="back">
-	<h1>
-		Ты худая!!!
-	</h1>
-</div>
-<div class="heart"></div>
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">About</h4>
+              <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white">Контакты</h4>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">Viber
+                    <i class="fab fa-viber fa-lg" style="color: #fcfcfe"></i>
+                </a>
+                  </li>
+                <li>
+                  <a href="#" class="text-white">WhatsApp
+                      <i class="fab fa-whatsapp fa-lg" style="color: #fcfcfe"></i>
+                  </a>
+               
+                </li>
+                <li><a href="#" class="text-white">Звонок
+                    <i class="fas fa-phone fa-lg" style="color: #fcfcfe"></i>
+                </a>
+                 </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container d-flex justify-content-between">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <strong>Железобетонные кольца</strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Оставить заявку</h1>
+          <form>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">ФИО</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Иванов Иван Иванович">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Выберите город</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Отправить
+              </button>
+            </form>
+        </div>
+      </section>
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img class="card-img-top" src="12.png" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, iure ex at quod cumque explicabo. Corporis voluptatem fugiat sit eaque! Deserunt dicta tenetur officia? Facere ex est magni possimus temporibus?</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                  <img class="card-img-top" src="12.png" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, iure ex at quod cumque explicabo. Corporis voluptatem fugiat sit eaque! Deserunt dicta tenetur officia? Facere ex est magni possimus temporibus?</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card mb-4 shadow-sm">
+                      <img src="12.png" class="img-thumbnail" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, iure ex at quod cumque explicabo. Corporis voluptatem fugiat sit eaque! Deserunt dicta tenetur officia? Facere ex est magni possimus temporibus?</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+        <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="holder.min.js"></script>
+  </body>
+</html>
