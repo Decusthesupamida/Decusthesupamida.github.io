@@ -108,6 +108,7 @@
   transition: all .5s;
 }
 .button2 {
+  min-width: 300px;
   display: inline-block;
   font-size: 2em;
   margin: .5em;
